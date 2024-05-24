@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMB Telkom University</title>
+</head>
+<body>
+    <h2>Pendaftaran Mahasiswa Baru Telkom University</h2>
+    <form action="" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Data Mahasiswa</legend>
+            <p>Nama: <input type="text" name="nama" id="nama" placeholder="Nama Anda" autocomplete="off" required></p>
+            <p>Tempat, Tanggal Lahir: 
+                <input type="text" name="Tempat_Lahir" id="Tempat_Lahir" placeholder="Tempat Lahir" required>
+                <input type="date" name="Lahir" id="Lahir" placeholder="Tanggal Lahir" required>
+            </p>
+            <p>Umur: <input type="number" name="umur" id="umur" min="1" max="50" required></p>
+            <p>Jenis Kelamin: 
+                <label for="m">
+                    <input type="radio" name="gender" id="m" required> Laki-Laki
+                </label>
+                <label for="f">
+                    <input type="radio" name="gender" id="f" required> Perempuan
+                </label>
+            </p>
+            <p>Agama: 
+                <select name="agama" id="agama" required>
+                <option value="" selected>Choose One</option>
+                <option value="">Islam</option>
+                <option value="">Kristen Katolik</option>
+                <option value="">Kristen Protestan</option>
+                <option value="">Budha</option>
+                <option value="">Hindu</option>
+                <option value="">KongHuChu</option>
+                </select>
+            </p>
+            <p></p>
+            <p>No.Telepon <input type="tel" name="Telepon" id="Telepon" placeholder="Nomor Handphone Anda" required></p>
+            <p>Alamat Lengkap: <input type="text" name="alamat" id="alamat" placeholder="Alamat Lengkap Anda" required></p>
+            <p>Email: <input type="email" name="email" id="email" placeholder="Alamat Email Anda" required></p>
+            <p>NIK: <input type="text" name="NIK" id="NIK" placeholder="NIK Anda" required></p>
+            <p>NISN: <input type="text" name="NISN" id="NISN" placeholder="NISN Anda" required></p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Data Ayah</legend>
+            <p>Nama Ayah: <input type="text" name="ayah" id="ayah" placeholder="Nama Ayah Anda" required></p>
+            <p>No. Ayah: <input type="tel" name="telayah" id="telayah" placeholder="No. Telepon Ayah Anda" required></p>
+            <p>Tempat, Tanggal Lahir Ayah: 
+                <input type="text" name="Tempatayah" id="Tempatayah" placeholder="Tempat Kelahiran Ayah" required>
+                <input type="date" name="Lahirayah" id="Lahirayah" required>
+            </p>
+            <p>Jenjang Pendidikan Ayah: 
+                <select name="jjayah" id="jjayah"  placeholder="Jenjang Terakhir Ayah Anda" required>
+                <option value="" selected>Choose One</option>
+                <option value="">Tidak Bersekolah</option>
+                <option value="">SD</option>
+                <option value="">SMP</option>
+                <option value="">SMA</option>
+                <option value="">D1</option>
+                <option value="">D2</option>
+                <option value="">D3</option>
+                <option value="">D4</option>
+                <option value="">S1</option>
+                <option value="">S2</option>
+                <option value="">S3</option>
+                </select>
+                </p>
+            <p>Pekerjaan <input type="text" name="kerjaayah" id="kerjaayah" placeholder="pekerjaan Ayah Anda" required></p>
+            <p>Penghasilan Per-Bulan Ayah:
+                <label for="min">
+                    <p><input type="radio" name="gajiayah" id="min" required> Sekurang-Kurangnya - Rp. 5.000.000</p>
+                </label>
+                <label for="low">
+                    <p><input type="radio" name="gajiayah" id="low" required> Rp. 5.100.000 - Rp. 10.000.000</p>
+                </label>
+                <label for="mid">
+                    <p><input type="radio" name="gajiayah" id="mid" required> Rp. 10.100.000 - Rp. 20.000.000</p>
+                </label>
+                <label for="overmid">
+                    <p><input type="radio" name="gajiayah" id="overmid" required> Rp. 20.100.000 - Rp. 30.000.000</p>
+                </label>
+                <label for="max">
+                    <p><input type="radio" name="gajiayah" id="max" required> Rp. 30.100.000 - Sebanyak-Banyaknya</p>
+                </label>
+                <label for="none">
+                    <p><input type="radio" name="gaji" id="none" required> Tidak Berpenghasilan</p>
+                </label>   
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Data Ibu</legend>
+            <p>Nama Ibu: <input type="text" name="ibu" id="ibu" placeholder="Nama Ibu Anda" required></p>
+            <p>No. Ibu: <input type="tel" name="telibu" id="telibu" placeholder="No. Telepon Ibu Anda" required></p>
+            <p>Tempat, Tanggal Lahir Ibu: 
+                <input type="text" name="Tempatibu" id="Tempatibu" placeholder="Tempat Kelahiran ibu" required>
+                <input type="date" name="Lahiribu" id="Lahiribu" required>
+            </p>
+            <p>Jenjang Pendidikan Ibu: 
+                <select name="jjibu" id="jjibu"  placeholder="Jenjang Terakhir ibu Anda" required>
+                <option value="" selected>Choose One</option>
+                <option value="">Tidak Bersekolah</option>
+                <option value="">SD</option>
+                <option value="">SMP</option>
+                <option value="">SMA</option>
+                <option value="">D1</option>
+                <option value="">D2</option>
+                <option value="">D3</option>
+                <option value="">D4</option>
+                <option value="">S1</option>
+                <option value="">S2</option>
+                <option value="">S3</option>
+                </select>
+                </p>
+            <p>Pekerjaan <input type="text" name="kerjaibu" id="kerjaibu" placeholder="pekerjaan ibu Anda" required></p>
+            <p>Penghasilan Per-Bulan Ibu:
+                <label for="min1">
+                    <p><input type="radio" name="gajiibu" id="min1" required> Sekurang-Kurangnya - Rp. 5.000.000</p>
+                </label>
+                <label for="low1">
+                    <p><input type="radio" name="gajiibu" id="low1" required> Rp. 5.100.000 - Rp. 10.000.000</p>
+                </label>
+                <label for="mid1">
+                    <p><input type="radio" name="gajiibu" id="mid1" required> Rp. 10.100.000 - Rp. 20.000.000</p>
+                </label>
+                <label for="overmid1">
+                    <p><input type="radio" name="gajiibu" id="overmid1" required> Rp. 20.100.000 - Rp. 30.000.000</p>
+                </label>
+                <label for="max1">
+                    <p><input type="radio" name="gajiibu" id="max1" required> Rp. 30.100.000 - Sebanyak-Banyaknya</p>
+                </label>
+                <label for="none1">
+                    <p><input type="radio" name="gajiibu" id="none1" required> Tidak Berpenghasilan</p>
+                </label>   
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Kakak</legend>
+            <p>Nama Kakak: <input type="text" name="kakak" id="kakak" placeholder="Nama Kakak Anda" required></p>
+            <p>No. Kakak: <input type="tel" name="telkakak" id="telkakak" placeholder="No. Telepon kakak Anda" required></p>
+            <p>Tempat, Tanggal Lahir kakak: 
+                <input type="text" name="Tempatkakak" id="Tempatkakak" placeholder="Tempat Kelahiran kakak" required>
+                <input type="date" name="Lahirkakak" id="Lahirkakak" required>
+            </p>
+            <p>Jenjang Pendidikan kakak: 
+                <select name="jjkakak" id="jjkakak"  placeholder="Jenjang Terakhir kakak Anda" required>
+                <option value="" selected>Choose One</option>
+                <option value="">Tidak Bersekolah</option>
+                <option value="">SD</option>
+                <option value="">SMP</option>
+                <option value="">SMA</option>
+                <option value="">D1</option>
+                <option value="">D2</option>
+                <option value="">D3</option>
+                <option value="">D4</option>
+                <option value="">S1</option>
+                <option value="">S2</option>
+                <option value="">S3</option>
+                </select>
+            </p>
+            <p><button type="button" onclick="tambahkakak()">Tambah data kakak</button></p> 
+            <p>(ini pake JavaScript. Contohnya ada di file "latihan6tes. Sekarang masih ga ngerti hehew)</p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Berkas</legend>
+            <p>Kartu Keluarga: <input type="file" name="kk" id="kk" accept=".pdf, .docx, image/*" required></p>
+            <p>KTP Ayah: <input type="file" name="ktpa" id="ktpa" accept=".pdf, .docx, image/*" required></p>
+            <p>KTP Calon Mahasiswa: <input type="file" name="ktpm" id="ktpm" accept=".pdf, .docx, image/*" required></p>
+            <p>Ijazah Calon Mahasiswa: <input type="file" name="ijazah" id="ijazah" accept=".pdf, .docx, image/*" required></p>
+            <p>Transkrip Nilai Calon Mahasiswa: <input type="file" name="Transkrip" id="Transkrip" accept=".pdf, .docx, image/*" required></p>
+            <p>Pilih Jurusan:
+                <select name="jurusan" id="jurusan" required>
+                    <option value="" selected>Choose One</option>
+                    <option value="">Informatika</option>
+                    <option value="">Desain Komunikasi Visual</option>
+                    <option value="">Teknik Logistik</option>
+                    <option value="">Sistem Informasi</option>
+                    <option value="">Teknik Industri</option>
+                    <option value="">Teknologi Rekayasa Multimedia</option>
+                    <option value="">Teknik Elektro</option>
+                    <option value="">Manajemen Bisnis</option>
+                    <option value="">Desain Interior</option>
+                </select>
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Konfirmasi</legend>
+            <details>
+            <summary>Konfirmasi Check</summary>
+            <p><input type="checkbox" name="" id="">Sudah benarnya data Ayah anda</p>
+            <p><input type="checkbox" name="" id="">Sudah benarnya data Ibu anda</p>
+            <p><input type="checkbox" name="" id="">Sudah benarnya data Kakak anda</p>
+            <p><input type="checkbox" name="" id="">Sudah benarnya Berkas yang anda masukkan</p>
+            <br>
+            <p><input type="checkbox" name="" id="">Saya menyatakan bahwa isian dalam formulir ini adalah benar. Apabila ternyata data tersebut tidak benar/palsu, maka saya bersedia menerima sanksi berupa pembatalan sebagai Calon Mahasiswa di Telkom University.</p>
+            </details>
+        </fieldset>
+        <br> <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Pendaftaran</title>
+</head>
+<body>
+
+<h2>Form Pendaftaran</h2>
+
+<form id="form-pendaftaran">
+    <div id="kakak-container">
+        <div class="kakak">
+            <h3>Data Kakak</h3>
+            <label for="nama-kakak">Nama Kakak:</label>
+            <input type="text" name="nama-kakak">
+            <br>
+            <label for="usia-kakak">Usia Kakak:</label>
+            <input type="number" name="usia-kakak">
+            <br>
+        </div>
+    </div>
+    <button type="button" onclick="tambahKakak()">Tambah Kakak</button>
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<script>
+function tambahKakak() {
+    var container = document.getElementById("kakak-container");
+    var kakakBaru = document.createElement("div");
+    kakakBaru.classList.add("kakak");
+    kakakBaru.innerHTML = `
+        <h3>Data Kakak</h3>
+        <label for="nama-kakak">Nama Kakak:</label>
+        <input type="text" name="nama-kakak">
+        <br>
+        <label for="usia-kakak">Usia Kakak:</label>
+        <input type="number" name="usia-kakak">
+        <br>
+    `;
+    container.appendChild(kakakBaru);
+}
+</script>
+
+</body>
+</html>

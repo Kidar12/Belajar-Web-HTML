@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran KPPS</title>
+</head>
+<body>
+    <h2>Form Registrasi KPPS</h2>
+    <form action="" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Data Pendaftar</legend>
+            <p>Nama: <input type="text" name="nama" id="nama"></p>
+            <p>Umur: <input type="text" name="" id=""></p>
+            <p>Umur: <input type="number" name="umur" id="umur" min="1" max="100" step="2"></p>
+            <!-- step adalah kelipatan -->
+            <p>No. Telepon <input type="tel" name="nomor" id="nomor"></p>
+            <p>Email Anda:<input type="email" name="" id="" placeholder="Email@Anda.com"></p>
+            <p> Jenis Kelamin: 
+                <input type="radio" name="gender" id=""> Laki-Laki
+                <input type="radio" name="gender" id=""> Perempuan
+            </p>
+            <p>
+                Tempat, Tanggal Lahir: <select name="" id="">
+                    <option value="" selected>dd</option>
+                    <option value="" >1</option>
+                    <option value="" >2</option>
+                    <option value="" >3</option>
+                    <option value="" >4</option>
+                    <option value="" >5</option>
+                    <option value="" >6</option>
+                    <option value="" >7</option>
+                    <option value="" >8</option>
+                    <option value="" >9</option>
+                    <option value="" >10</option>
+                    <option value="" >11</option>
+                    <option value="" >12</option>
+                    <option value="" >13</option>
+                    <option value="" >14</option>
+                    <option value="" >15</option>
+                    <option value="" >16</option>
+                    <option value="" >17</option>
+                    <option value="" >18</option>
+                    <option value="" >19</option>
+                    <option value="" >20</option>
+                    <option value="" >21</option>
+                    <option value="" >22</option>
+                    <option value="" >23</option>
+                    <option value="" >24</option>
+                    <option value="" >25</option>
+                    <option value="" >26</option>
+                    <option value="" >27</option>
+                    <option value="" >28</option>
+                    <option value="" >29</option>
+                    <option value="" >30</option>
+                    <option value="" >31</option>
+                </select>
+                <select name="" id="">
+                    <option value="" selected>mm</option>
+                    <option value="" >Januari</option>
+                    <option value="" >Februari</option>
+                    <option value="" >Maret</option>
+                    <option value="" >April</option>
+                    <option value="" >Mei</option>
+                    <option value="" >Juni</option>
+                    <option value="" >Juli</option>
+                    <option value="" >Agustus</option>
+                    <option value="" >September</option>
+                    <option value="" >Oktober</option>
+                    <option value="" >November</option>
+                    <option value="" >Desember</option>
+                </select>
+                <select name="" id="">
+                    <option value="" selected>yyyy</option>
+                    <option value="" >Lower</option>
+                    <option value="" >2007</option>
+                    <option value="" >2008</option>
+                    <option value="" >2009</option>
+                    <option value="" >2010</option>
+                    <option value="" >2011</option>
+                    <option value="" >2012</option>
+                    <option value="" >2013</option>
+                    <option value="" >2014</option>
+                    <option value="" >2015</option>
+                    <option value="" >2016</option>
+                    <option value="" >2017</option>
+                    <option value="" >2018</option>
+                    <option value="" >2019</option>
+                    <option value="" >2020</option>
+                    <option value="" >2021</option>
+                    <option value="" >2022</option>
+                    <option value="" >2023</option>
+                    <option value="" >2024</option>
+                </select>
+            </p>
+            <p> Tempat, Tanggal Lahir: <input type="date" name="" id=""></p>
+            <p>Alamat: <input type="text" name="" id=""></p>
+            <p>Upload Foto Keseluruhan Badan Anda (dengan baju yang sopan): <input type="file" name="" id="" accept="image/*"></p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Status</legend>
+            <p><input type="radio" name="stat" id=""> Newbie</p>
+            <p><input type="radio" name="stat" id=""> Mid</p>
+            <p><input type="radio" name="stat" id=""> Nearly Pro</p>
+            <p><input type="radio" name="stat" id=""> Pro</p>
+            <p><input type="radio" name="stat" id=""> Pro Max</p>
+            <!-- gunakan radio jika ingin membuat pilihan yang hanya bisa di pilih satu. Lalu gunakan checkbox jika ingin memilih lebih dari satu. -->
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Posisi</legend>
+            <p><input type="radio" name="Posisi" id="">Ketua</p>
+            <p><input type="radio" name="Posisi" id="">Anggota</p>
+            <p><input type="radio" name="Posisi" id="">Satuan Perlindungab Masyarakat (Satlinmas)</p>
+            <p><input type="radio" name="Posisi" id="">Ketua KPPS Luar Negeri</p>
+            <p><input type="radio" name="Posisi" id="">Sekretaris KPPS Luar Negeri</p>
+            <p><input type="radio" name="Posisi" id="">Satlinmas Luar Negeri</p>
+            <p><input type="radio" name="Posisi" id="">PJ Luka Sedang</p>
+            <p><input type="radio" name="Posisi" id="">PJ Luka Berat</p>
+            <p><input type="radio" name="Posisi" id="">PJ Cacat Permanen</p>
+            <p><input type="radio" name="Posisi" id="">PJ Meninggal Dunia</p>
+            <p>(honor per-posisi berbeda)</p>
+        </fieldset>
+        <p> Uang Pendaftaran
+            <input type="text" value="Rp. 400.000">
+        </p>
+        <p><button type="submit">Submit</button></p>
+    </form>
+</body>
+</html>

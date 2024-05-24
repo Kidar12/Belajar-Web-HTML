@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Form</title>
+</head>
+<body>
+    <form action="">
+        <p>Username : <input type="text" name="username" id="username"  placeholder="Your USN"></p>
+        <!-- terdapat atribut hidden berfungsi sangat penting pada kondisi tertentu. contoh jika ada kolom no id. Nomor id ter generate secara otomatis oleh database dan tidak bisa di ubah, maka dari itu menggunakan atribut hidden atau bisa juga dengan disabled -->
+        <p>Password   :  <input type="password" name="sandi" id="sandi" placeholder="Your Paxxword"></p>
+        <button type="submit" name="submit">Login</button>
+        <!-- type submit pada button berfungsi untuk mengirim nilai pada type text dan password. Sedangkan name submit digunakan sebagai key pada nama kolom di database ketika kita sudah berinteraksi dengan php dan database -->
+    <p>Your Birth Date: <input type="date" name="birth_date"></p>
+    <p>Gender </p>
+    <p> <input type="radio" name="Jenis_kelamin" value="Male"> Male
+    </p>
+    <p><input type="radio" name="Jenis_kelamin" value="Female"> Female
+    </p>
+    <p> Blood Type: 
+        <input type="radio" name="darah" value="A">A
+        <input type="radio" name="darah" value="AB">AB
+        <input type="radio" name="darah" value="B">B
+        <input type="radio" name="darah" value="O">O
+    </p>
+<p>Mood Check:</p>
+<p><input type="checkbox">Safe</p>
+<p><input type="checkbox">Hungry</p>
+<p><input type="checkbox">Mad</p>
+<p><input type="checkbox">Sad</p>
+<p><input type="checkbox">Happy</p> 
+<caption font>*Choose as many as you feel</caption>
+<p> What do you do when you were bored?
+    <select name="" id="">
+        <option value="" selected>Choose One</option>
+        <option value="" >Eat</option>
+        <option value="" >Sleeping</option>
+        <option value="" >Playing Games</option>
+        <option value="" >Studying</option>
+        <option value="" >Listening to some Music</option>
+        <option value="" >Watching Movie or Series Online</option>
+        <option value="" >Me Time</option>
+        <option value="" >Go Out</option>
+        <option value="" >Singing</option>
+    </select> </p>
+<p>Notes:</p> 
+<form action=""><textarea name="notes" id="notes" cols="80" rows="30">Write your diary.....</textarea></p>
+
+<!-- menggunakan label agar lebih memudahkan jika ingin menekan opsi opsi nya. WAJIB!!! -->
+<p>
+    <label for="username">username: </label> 
+    <input type="text" name="" id="username">   
+</p>
+
+<p> Option:
+    <label for="mood">
+        <input type="checkbox" name="" id="mood"> New User 
+    </label>
+    <label for="id">
+        <input type="checkbox" name="" id="id"> Old Haag
+    </label>
+</p>
+<!-- khusus checkbox, /label nya di taruh di akhir setelah keterangan agar hanya mengenali keteranagnnya itu sendiri -->
+
+<p> your gender would be?
+    <label for="m">
+        <input type="radio" name="gen" id="m"> male
+    </label>
+
+    <label for="f">
+        <input type="radio" name="gen" id="f"> female
+    </label>
+</p>
+
+<fieldset>
+    <legend>Your Bio</legend>
+    <p>Name:    <input type="text" name="Name" id="Name"></p>
+    <p>Address: <input type="text" name="alamat" id="alamat"></p>
+    <p>Age:     <input type="text" name="Umur" id="Umur"></p>
+    <p>What are you right now?
+        <select name="" id="">
+            <option value="" selected>Choose One</option>
+            <option value="">Elementary School</option>
+            <option value="">Middle School</option>
+            <option value="">High School</option>
+            <option value="">Colleagues</option>
+            <option value="">Employee</option>
+            <option value="">Parents</option>
+            <option value="">Grand Parents</option>
+            <option value="">Great Grand Parents</option>
+            <option value="">Already Dead</option>
+        </select>
+    <p><button>save</button></p>
+    </p>
+</fieldset>
+
+<p>
+    <select name="" id="">
+        <option value="" selected>What dates you were born</option>
+        <option value="" >1</option>
+        <option value="" >2</option>
+        <option value="" >3</option>
+        <option value="" >4</option>
+        <option value="" >5</option>
+        <option value="" >6</option>
+        <option value="" >7</option>
+        <option value="" >8</option>
+        <option value="" >9</option>
+        <option value="" >10</option>
+        <option value="" >11</option>
+        <option value="" >12</option>
+        <option value="" >13</option>
+        <option value="" >14</option>
+        <option value="" >15</option>
+        <option value="" >16</option>
+        <option value="" >17</option>
+        <option value="" >18</option>
+        <option value="" >19</option>
+        <option value="" >20</option>
+        <option value="" >21</option>
+        <option value="" >22</option>
+        <option value="" >23</option>
+        <option value="" >24</option>
+        <option value="" >25</option>
+        <option value="" >26</option>
+        <option value="" >27</option>
+        <option value="" >28</option>
+        <option value="" >29</option>
+        <option value="" >30</option>
+        <option value="" >31</option>
+    </select>
+</p>
+
+<p> What color that suits you well?: <input type="color" name="warna"> </p>
+
+<p>Your Email: <input type="email" name="email" id="email"></p>
+
+<p>Site Name: <input type="url" name="url" id="web"></p>
+
+<p>Time right now: <input type="time" name="waktu" id="waktu"></p>
+
+<p>Dates and Times:
+    <input type="date" name="dates" id="dates">
+    <input type="time" name="times" id="times">
+</p>
+
+<p>Dates and Times 2:
+    <input type="datetime-local" name="" id="">
+</p>
+
+<p>Month and Year: <input type="month" name="" id=""></p>
+
+<p>Week: <input type="week" name="" id=""></p>
+
+<p><button type="submit" name="submit">Submit</button></p>
+</form>
+</body>
+</html>

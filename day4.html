@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meja.jpg</title>
+</head>
+<body>
+    <!-- rules berguna untuk memberi garis ada beberapa command rule yaitu:
+        cols untuk memberikan border pada kolom (td) 
+        rows untuk memberikan border pada baris
+        all untuk memberikan border pada kedua nya
+        none untuk tidak memberikan apa apa-->
+    <table rules="all" border="1" cellspacing="1" cellpadding="7" align="Right">
+        <caption>PLO Semester 1</caption>
+        <tr>
+            <th>Matkul Kidar</th>
+            <th>Kelas </th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>Kalkulus</td>
+            <td>IF-47-10</td>
+            <td>Lulus (A)</td>
+        </tr>
+        <tr>
+            <td>Logika Matematika</td>
+            <td>IF-47-10</td>
+            <td>Lulus (A)</td>
+        </tr>
+    </table>
+    <table border="1" cellspacing="1" cellpadding="7" align="left">
+        <caption>PLO Semester 1</caption>
+        <tr>
+            <th>Matkul Kidar</th>
+            <th>Kelas </th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>Kalkulus</td>
+            <td>IF-47-10</td>
+            <td>Lulus (A)</td>
+        </tr>
+        <tr>
+            <td>Logika Matematika</td>
+            <td>IF-47-10</td>
+            <td>Lulus (A)</td>
+        </tr>
+    </table>
+    <table border="1" cellspacing="1" cellpadding="7" align="center">
+        <caption>PLO Semester 1</caption>
+        <tr>
+            <th>Matkul Kidar</th>
+            <th>Kelas </th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td colspan="3" align="center">Kalkulus</td>
+            <!-- <td>IF-47-10</td>
+            <td>Lulus (A)</td> -->
+        </tr>
+        <tr>
+            <td rowspan="2">Logika Matematika</td>
+            <td>IF-47-10</td>
+            <td>Lulus (A)</td>
+        </tr>
+        <tr>
+            <!-- <td>AIJ</td> -->
+            <td>XII TKJ 1</td>
+            <td>Lulus (A)</td>
+        </tr>
+    </table>
+    <!-- colspan berguna untuk menggabungkan beberapa kolom menjadi satu, lalu masukkan nilai nya dengan artian berapa kolom yang akan di gabung. aku menggunakan baris kedua kolom 1 sebagai contoh dan menghapus ataupun memberikan commentary pada baris sisanya agar tidak terjadi tabrakan antar kolom.
+    untuk rowspan juga kurang lebih sama, perlu di perhatikan bahwa memberika rowspan nya hanya kepada sesama kolom, misalkan kolom pertama sama kolom pertama juga (seperti di contoh). -->
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Pendaftaran</title>
+</head>
+<body>
+
+<h2>Form Pendaftaran</h2>
+
+<form id="form-pendaftaran">
+    <div id="kakak-container">
+        <fieldset>
+            <legend>Kakak</legend>
+            <p>Nama Kakak: <input type="text" name="kakak[]" placeholder="Nama Kakak Anda"></p>
+            <p>No. Kakak: <input type="tel" name="telkakak[]" placeholder="No. Telepon kakak Anda"></p>
+            <p>Tempat, Tanggal Lahir kakak: 
+                <input type="text" name="Tempatkakak[]" placeholder="Tempat Kelahiran kakak">
+                <input type="date" name="Lahirkakak[]">
+            </p>
+            <p>Jenjang Pendidikan kakak: 
+                <select name="jjkakak[]" placeholder="Jenjang Terakhir kakak Anda">
+                    <option value="" selected>Choose One</option>
+                    <option value="">Tidak Bersekolah</option>
+                    <option value="">SD</option>
+                    <option value="">SMP</option>
+                    <option value="">SMA</option>
+                    <option value="">D1</option>
+                    <option value="">D2</option>
+                    <option value="">D3</option>
+                    <option value="">D4</option>
+                    <option value="">S1</option>
+                    <option value="">S2</option>
+                    <option value="">S3</option>
+                </select>
+            </p>
+        </fieldset>
+        <p><button type="button" onclick="tambahKakak()">Tambah data kakak</button></p>
+    </div>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+
+<script>
+function tambahKakak() {
+    var container = document.getElementById("kakak-container");
+    var clone = container.firstElementChild.cloneNode(true);
+    container.appendChild(clone);
+}
+</script>
+
+</body>
+</html>

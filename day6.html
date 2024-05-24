@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload bla bla bla</title>
+</head>
+<body>
+    <form action="" enctype="multipart/form-data">
+    <p align="right"><input type="search" name="search" id=""></p>
+    <p align="right"><button type="submit">Search</button></p>
+    <p> What color that suits you well?: <input type="color" name="warna"> </p>
+    <p>Email anda: <input type="email" name="email" autocomplete="on" required></p>
+    <!-- autocomplete berfungsi agar terdapat histori jika menekan bar nya. jika di off kan maka tidak ada. -->
+    <!-- required berarti bar ini tidak bisa di lewatkan dan wajib di isi. -->
+    <p><progress value="0.10"></progress></p> 
+    <!-- nilai minimum nya 0 dan maximum nya adalah 1 atau bisa juga dengan seperti ini-->
+    <p><progress value="50" max="100"></progress></p>
+    <!-- progress berguna untuk menampilkan progres jika sedang unduh atau upload -->
+    <p> <meter value="50" max="250"></meter>
+    <!-- meter biasa digunaka untuk tinggi badan (?) tapi secara fungsi sama. -->
+    </p>
+    <p>Upload Gambar: <input type="file" name="" id=""></p>
+    <!-- untuk membatasi hanya beberapa tipe file tertentu saja yang bisa di masukkan, gunakan accept="formatfile/*". seperti conoth di bawah. -->
+    <p>Gambar only<input type="file" name="" id="" accept="image/*"></p>
+    <p>Video only<input type="file" name="" id="" accept="video/*"></p>
+    <p>PDF Only<input type="file" name="" id="" accept=".pdf"></p>
+    <p>Word only<input type="file" name="" id="" accept=".doc"></p>
+    <p>Word Next Gen Only<input type="file" name="" id="" accept=".docx"></p>
+    <p>Excel Only<input type="file" name="" id="" accept=".xlsx"></p>
+    <p>PPT Only<input type="file" name="" id="" accept=".pptx"></p>
+    <!-- jangan lupa untuk menambahkan enctype="multipart pada awalan tag form karena penting untuk webserver nantinya." -->
+    <button type="submit" name="submit">Submit</button>
+    </form> <br>
+    <details>
+        <summary>Lorem?</summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla autem illo iusto repudiandae quae possimus tempore, ipsa aperiam hic neque dolore quasi excepturi quod, dolor animi quas consequuntur eveniet itaque.</p>
+    </details>
+    <p>Best Performance of Kiss Of Life:</p>
+    <p> 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5C2YqvRFbDc?si=n_mD67kP2Dj5Sxs-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </p>
+    <p>The Fancam:</p>
+    <p>
+        <iframe width="400" height="215" src="https://www.youtube.com/embed/xwQRLiqSeuA?si=0-ROO_8wxy7pFwvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </p>
+    <p>Jika Menggunakan Table: </p>
+    <p>
+        <table align="center">
+            <tr>
+                <td>
+                    <iframe width="400" height="215" src="https://www.youtube.com/embed/XtCInYeEGtM?si=rPSE8OGwz8fXRKr2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </td>
+                <td>
+                    <iframe width="400" height="215" src="https://www.youtube.com/embed/XtCInYeEGtM?si=rPSE8OGwz8fXRKr2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </td>   
+                <td>
+                    <iframe width="400" height="215" src="https://www.youtube.com/embed/XtCInYeEGtM?si=rPSE8OGwz8fXRKr2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </td>
+            </tr>
+        </table>
+    </p>
+</body>
+</html>
